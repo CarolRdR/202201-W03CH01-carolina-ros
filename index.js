@@ -37,7 +37,7 @@ characters.forEach((character) => {
                
               </ul>
               <div class="character__actions">
-                <button id="message" class="character__action btn">habla</button>
+                <button id="message" class="character__action btn">"habla"</button>
                 <button id ="death" class="character__action btn">muere</button>
               </div>
             </div>
@@ -50,9 +50,8 @@ characters.forEach((character) => {
 });
 
 characters.forEach((character, index) => {
-  const btn = document.querySelectorAll('button');
-  const action = document.querySelectorAll('#message');
+  const btn = document.querySelectorAll('#message');
   btn[index].addEventListener('click', () => {
-    action[index].innerHTML = `${character.message}`;
+    btn[index].innerHTML = `${character.message}`;
   });
 });
