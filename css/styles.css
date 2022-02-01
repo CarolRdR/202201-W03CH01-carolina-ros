@@ -65,6 +65,9 @@ body {
   color: #fff;
   width: 80%;
 }
+.character__action:hover {
+  transition-duration: 0.2s;
+}
 .comunications {
   position: fixed;
   top: 0;

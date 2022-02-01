@@ -38,7 +38,7 @@ characters.forEach((character) => {
               </ul>
               <div class="character__actions">
                 <button id="message" class="character__action btn">"habla"</button>
-                <button id ="death" class="character__action btn">muere</button>
+                <button id ="death" class="character__action btn">"muere"</button>
               </div>
             </div>
           </div>
@@ -52,6 +52,12 @@ characters.forEach((character) => {
 characters.forEach((character, index) => {
   const btn = document.querySelectorAll('#message');
   btn[index].addEventListener('click', () => {
-    btn[index].innerHTML = `${character.message}`;
+    btn[('transitionend', index)].innerHTML = `${character.message}`;
+  });
+});
+characters.forEach((character, index) => {
+  const btn = document.querySelectorAll('#death');
+  btn[index].addEventListener('click', () => {
+    btn[('transitionend', index)].innerHTML = `${character.status}`;
   });
 });
