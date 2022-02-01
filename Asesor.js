@@ -6,5 +6,6 @@ export class Advisor extends Character {
     this.age = 30;
     this.patron = 'Daenerys Targaryen';
     this.message = "I'am not sure why, but I believe I am going to die soon";
+    this.emoji = '🎓';
   }
 }

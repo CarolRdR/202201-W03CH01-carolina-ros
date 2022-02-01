@@ -24,5 +24,6 @@ nameKnight.skill = 'Handicap';
 nameKnightD.age = 25;
 nameKnightD.weapon = 'Dragons';
 nameKnightD.skill = 'Mother Of Dragons';
+nameKnightD.emoji = '🗡';
 
 console.log(characters);

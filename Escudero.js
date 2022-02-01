@@ -8,5 +8,6 @@ export class Squire extends Character {
     this.patron = 'Jamie Lannister';
     this.skill = 'Sword and machete';
     this.message = 'I am a loser';
+    this.emoji = '🛡';
   }
 }

@@ -10,10 +10,14 @@ characters.forEach((character) => {
   const template = `
 <li class="character col">
         <div class="card character__card">
-          <img src="img/${character.name}.jpg" alt= ${character.name} ${character.family} class="character__picture card-img-top" />
+          <img src="img/${character.name.toLowerCase()}.jpg" alt= ${
+    character.name
+  } ${character.family} class="character__picture card-img-top" />
 
           <div class="card-body">
-            <h2 class="character__name card-title h4">${character.name} ${character.family}</h2>
+            <h2 class="character__name card-title h4">${character.name} ${
+    character.family
+  }</h2>
             <div class="character__info">
               <ul class="list-unstyled">
                 <li>Edad: ${character.age} años</li>
@@ -33,12 +37,12 @@ characters.forEach((character) => {
                
               </ul>
               <div class="character__actions">
-                <button id="message" class="character__action btn">habla</button>
+                <button id="message" class="character__action btn">"habla"</button>
                 <button id ="death" class="character__action btn">muere</button>
               </div>
             </div>
           </div>
-          <i class="emoji"></i>
+          <i class="emoji"> ${character.emoji}</i>
         </div>
       </li>
       `;
@@ -46,9 +50,8 @@ characters.forEach((character) => {
 });
 
 characters.forEach((character, index) => {
-  const btn = document.querySelectorAll('button');
-  const action = document.querySelectorAll('#message');
+  const btn = document.querySelectorAll('#message');
   btn[index].addEventListener('click', () => {
-    action[index].innerHTML = `${character.message}`;
+    btn[index].innerHTML = `${character.message}`;
   });
 });
