@@ -7,5 +7,6 @@ export class Knight extends Character {
     this.weapon = weapon;
     this.skill = skill;
     this.message = 'Hit first, then ask';
+    this.emoji = '🗡';
   }
 }

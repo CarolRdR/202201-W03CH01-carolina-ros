@@ -6,5 +6,6 @@ export class King extends Character {
     this.age = 14;
     this.yearsRuling = 1;
     this.message = 'You are all going to die!';
+    this.emoji = '👑';
   }
 }

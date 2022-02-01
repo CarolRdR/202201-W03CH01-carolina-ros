@@ -13,3 +13,5 @@ export class Character {
     this.status = 'isDeath';
   }
 }
+
+Character.prototype.series = 'GoT';

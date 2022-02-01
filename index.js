@@ -10,10 +10,14 @@ characters.forEach((character) => {
   const template = `
 <li class="character col">
         <div class="card character__card">
-          <img src="img/${character.name}.jpg" alt= ${character.name} ${character.family} class="character__picture card-img-top" />
+          <img src="img/${character.name.toLowerCase()}.jpg" alt= ${
+    character.name
+  } ${character.family} class="character__picture card-img-top" />
 
           <div class="card-body">
-            <h2 class="character__name card-title h4">${character.name} ${character.family}</h2>
+            <h2 class="character__name card-title h4">${character.name} ${
+    character.family
+  }</h2>
             <div class="character__info">
               <ul class="list-unstyled">
                 <li>Edad: ${character.age} años</li>
@@ -38,7 +42,7 @@ characters.forEach((character) => {
               </div>
             </div>
           </div>
-          <i class="emoji"></i>
+          <i class="emoji"> ${character.emoji}</i>
         </div>
       </li>
       `;
