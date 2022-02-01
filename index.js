@@ -33,8 +33,8 @@ characters.forEach((character) => {
                
               </ul>
               <div class="character__actions">
-                <button id= "message" class="character__action btn">habla</button>
-                <button class="character__action btn">muere</button>
+                <button id="message" class="character__action btn">habla</button>
+                <button id ="death" class="character__action btn">muere</button>
               </div>
             </div>
           </div>
