@@ -1,9 +1,9 @@
 export class Character {
-  #status = 'isAlive';
-  constructor(name, family, age) {
+  constructor(name, family, age, status) {
     this.name = name;
     this.age = age;
     this.family = family;
+    this.status = 'Alive';
   }
 
   comunicate() {
