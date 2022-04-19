@@ -16,3 +16,7 @@ Tendrás que programar esta interfaz de usuario para que refleje el modelo de da
    - En la lista con clase `metadata`, haz que sólo aparezcan los `li` correspondientes al personaje.
 2. Cuando el usuario haga clic en el botón "muere", tiene que cambiar el estado del personaje, y la interfaz debe reflejar el cambio.
 3. Cuando el usuario haga clic en el botón "habla", el elemento con clase `comunicaciones` debe aparecer con el texto y la imagen correspondientes. Haz que este elemento `comunicaciones` tenga la clase `on` durante 2 segundos y luego se le quite.
+
+
+
+Check it out @ ----> https://got-sample.netlify.app/
